@@ -1,0 +1,135 @@
+{
+  "total_clientes": 1000,
+  "renda_media": 8228.3,
+  "contagem_risco": {
+    "Médio": 614,
+    "Baixo": 323,
+    "Alto": 63
+  },
+  "uso_limite_por_risco": {
+    "Alto": 619.7,
+    "Baixo": 91.0,
+    "Médio": 393.2
+  },
+  "risco_por_idade": {
+    "18-25": {
+      "Alto": 6,
+      "Baixo": 47,
+      "Médio": 88
+    },
+    "26-35": {
+      "Alto": 15,
+      "Baixo": 68,
+      "Médio": 102
+    },
+    "36-50": {
+      "Alto": 10,
+      "Baixo": 70,
+      "Médio": 160
+    },
+    "51+": {
+      "Alto": 32,
+      "Baixo": 138,
+      "Médio": 264
+    }
+  },
+  "risco_por_renda": {
+    "Até 3k": {
+      "Alto": 23,
+      "Baixo": 26,
+      "Médio": 69
+    },
+    "3k-7k": {
+      "Alto": 39,
+      "Baixo": 81,
+      "Médio": 182
+    },
+    "7k-15k": {
+      "Alto": 1,
+      "Baixo": 216,
+      "Médio": 363
+    }
+  },
+  "top_10_risco": [
+    {
+      "nome": "Bonni Hender",
+      "idade": 45,
+      "estado": "MS",
+      "renda_mensal": 1681.0,
+      "score": 64.0,
+      "classificacao_risco": "Alto"
+    },
+    {
+      "nome": "Reinwald Doey",
+      "idade": 33,
+      "estado": "SC",
+      "renda_mensal": 1522.0,
+      "score": 64.0,
+      "classificacao_risco": "Alto"
+    },
+    {
+      "nome": "Ollie Burger",
+      "idade": 74,
+      "estado": "PI",
+      "renda_mensal": 2120.0,
+      "score": 64.0,
+      "classificacao_risco": "Alto"
+    },
+    {
+      "nome": "Carilyn McChruiter",
+      "idade": 22,
+      "estado": "MA",
+      "renda_mensal": 2219.0,
+      "score": 64.0,
+      "classificacao_risco": "Alto"
+    },
+    {
+      "nome": "Wileen Sprade",
+      "idade": 20,
+      "estado": "MS",
+      "renda_mensal": 2685.0,
+      "score": 64.0,
+      "classificacao_risco": "Alto"
+    },
+    {
+      "nome": "Griselda MacCambridge",
+      "idade": 72,
+      "estado": "GO",
+      "renda_mensal": 2856.0,
+      "score": 64.0,
+      "classificacao_risco": "Alto"
+    },
+    {
+      "nome": "Minda Joynes",
+      "idade": 27,
+      "estado": "GO",
+      "renda_mensal": 2328.0,
+      "score": 64.0,
+      "classificacao_risco": "Alto"
+    },
+    {
+      "nome": "Ellissa Feasley",
+      "idade": 51,
+      "estado": "PI",
+      "renda_mensal": 2620.0,
+      "score": 64.0,
+      "classificacao_risco": "Alto"
+    },
+    {
+      "nome": "Harriett Dinneges",
+      "idade": 68,
+      "estado": "PE",
+      "renda_mensal": 1983.0,
+      "score": 64.0,
+      "classificacao_risco": "Alto"
+    },
+    {
+      "nome": "Kathryn Reven",
+      "idade": 69,
+      "estado": "AP",
+      "renda_mensal": 3056.0,
+      "score": 64.0,
+      "classificacao_risco": "Alto"
+    }
+  ]
+}

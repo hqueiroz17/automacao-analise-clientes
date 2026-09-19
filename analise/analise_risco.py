@@ -164,3 +164,19 @@ resumo_geral = {
 }
 
 print(resumo_geral)
+
+# Converte valores numpy (np.float64, np.int64) para tipos Python puros,
+# evitando problemas de formatação no HTML
+def limpar_numero(valor):
+    if hasattr(valor, "item"):
+        return valor.item()
+    return valor
+
+import json
+
+# Salva o resumo_geral em um arquivo JSON, para que o script de relatório
+# possa ler esses resultados sem precisar recalcular tudo de novo
+with open("resumo_analise.json", "w", encoding="utf-8") as arquivo:
+    json.dump(resumo_geral, arquivo, ensure_ascii=False, indent=2, default=limpar_numero)
+
+print("Resumo salvo em: resumo_analise.json")
