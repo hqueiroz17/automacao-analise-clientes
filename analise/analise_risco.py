@@ -137,3 +137,30 @@ print(resumo_uso_limite)
 top_risco = df.nlargest(10, "score")[["nome", "idade", "estado", "renda_mensal", "score", "classificacao_risco"]]
 print("\nTop 10 clientes de maior risco:")
 print(top_risco)
+
+# Organiza um resumo geral, reunindo os principais números em um só lugar.
+# Isso vai facilitar a geração do relatório HTML depois, já que teremos
+# tudo pronto para "encaixar" no template.
+resumo_geral = {
+
+    # Quantos clientes existem no total 
+    "total_clientes": len(df),
+
+    # Média de renda mensal de todos os clientes, arredondada para 2 casas decimais
+    "renda_media": round(df["renda_mensal"].mean(), 2),
+
+    # Quantos clientes existem em cada classificação de risco
+    # (Alto, Médio, Baixo), transformado em dicionário simples
+    "contagem_risco": df["classificacao_risco"].value_counts().to_dict(),
+
+    "uso_limite_por_risco": resumo_uso_limite.to_dict(),
+
+    # Distribuição de risco (Alto/Médio/Baixo) dentro de cada idade e renda.
+    "risco_por_idade": resumo_idade.to_dict(orient="index"),
+    "risco_por_renda": resumo_renda.to_dict(orient="index"),
+
+    # Os 10 clientes de maior risco
+    "top_10_risco": top_risco.to_dict(orient="records")
+}
+
+print(resumo_geral)
