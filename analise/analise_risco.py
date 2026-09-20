@@ -180,3 +180,4 @@ with open("resumo_analise.json", "w", encoding="utf-8") as arquivo:
     json.dump(resumo_geral, arquivo, ensure_ascii=False, indent=2, default=limpar_numero)
 
 print("Resumo salvo em: resumo_analise.json")
+
