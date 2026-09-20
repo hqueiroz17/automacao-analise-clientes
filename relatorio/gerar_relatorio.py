@@ -80,3 +80,14 @@ for faixa, contagem in resumo["risco_por_renda"].items():
     })
 
 print(faixas_renda_processadas)
+
+# Limpa os valores numpy do uso de limite por risco
+uso_limite_limpo = {chave: limpar_numero(valor) for chave, valor in resumo["uso_limite_por_risco"].items()}
+
+# O top 10 já vem em formato de lista de dicionários, só precisamos limpar os números
+top_10_limpo = []
+for cliente in resumo["top_10_risco"]:
+    top_10_limpo.append({chave: limpar_numero(valor) for chave, valor in cliente.items()})
+
+print(uso_limite_limpo)
+print(top_10_limpo[0])
